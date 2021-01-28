@@ -1,0 +1,43 @@
+#buttons-container {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(5, 100px);
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ". . . .";
+  justify-content: center;
+  align-content: center;
+}
+
+#equal {
+  grid-column: 3 / 5;
+}
+
+button {
+  font-size: 45px;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+#container {
+  width: 400px;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 100px auto;
+  justify-items: left;
+}
+
+#output {
+  font-size: 65px;
+  display: grid;
+  justify-self: right;
+  align-items: center;
+}

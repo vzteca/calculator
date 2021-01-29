@@ -4,15 +4,21 @@
     <meta charset="UTF-8" />
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Roboto:wght@900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div id="container">
-      <div id="output"></div>
+      <div id="output"><p id="screen"></p></div>
       <div id="buttons-container">
-        <button class="" id="clear">AC</button>
-        <button class="" id="del">⌫</button>
+        <button class="btn" id="clear">AC</button>
+        <button class="btn" id="del">⌫</button>
         <button class="" value="percentage" id="percentage">%</button>
-        <button class="operator" value="divide" id="divide">/</button>
+        <button class="operator" value="divide">/</button>
         <button class="digit" value="7">7</button>
         <button class="digit" value="8">8</button>
         <button class="digit" value="9">9</button>
@@ -26,8 +32,8 @@
         <button class="digit" value="3">3</button>
         <button class="operator" value="add">+</button>
         <button class="digit" value="0">0</button>
-        <button class="" value="." id="decimal">.</button>
-        <button class="" id="equal">=</button>
+        <button class="btn" value="." id="decimal">.</button>
+        <button class="pill" id="equal">=</button>
       </div>
     </div>
   </body>

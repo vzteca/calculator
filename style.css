@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: repeat(4, 100px);
   grid-template-rows: repeat(5, 100px);
-  gap: 0px 0px;
+  gap: 10px 10px;
   grid-template-areas:
     ". . . ."
     ". . . ."
@@ -11,6 +11,8 @@
     ". . . .";
   justify-content: center;
   align-content: center;
+
+  padding: 10px;
 }
 
 #equal {
@@ -19,25 +21,99 @@
 
 button {
   font-size: 45px;
+  color: rgb(214, 214, 214);
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  outline: none;
+  border-radius: 5000px;
+  transition: all 0.3s;
 }
 
+.digit:hover,
+.btn:hover {
+  background: rgba(80, 80, 80, 0.25);
+}
+
+.digit:active,
+.btn:hover {
+  background: rgba(80, 80, 80, 0.75);
+}
+
+.operator:hover,
+#percentage:hover {
+  background: rgba(80, 80, 80, 0.75);
+}
+.operator:active,
+#percentage:active {
+  background: rgba(80, 80, 80, 1);
+}
+#equal:hover {
+  background-color: rgb(204, 31, 31);
+}
+#equal:active {
+  background-color: rgb(219, 48, 48);
+}
 body {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   margin: 0;
+  background: rgb(12, 12, 12);
 }
 
 #container {
-  width: 400px;
+  width: 450px;
+  height: 670px;
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: 100px auto;
   justify-items: left;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 3px solid gray;
+  border-radius: 50px;
+  background: rgb(28, 28, 29);
 }
 
 #output {
   font-size: 65px;
+  color: rgb(41, 41, 41);
+  background-color: rgb(214, 214, 214);
+  width: inherit;
   display: grid;
   justify-self: right;
+  justify-items: right;
   align-items: center;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 45px 45px 0 0;
+}
+
+#output p {
+  margin: 0;
+  padding: 0px 10px 0px 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#paragraph.innerHTML {
+  padding: 5px;
+}
+
+.digit,
+#clear,
+#decimal {
+  font-family: "Montserrat", sans-serif;
+}
+
+.operator,
+#percentage {
+  font-family: "Roboto", sans-serif;
+  background-color: rgba(80, 80, 80, 0.25);
+}
+
+#equal {
+  background-color: rgb(192, 11, 11, 0.9);
 }
